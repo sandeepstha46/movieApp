@@ -1,6 +1,7 @@
 import React from 'react'
 import SidebarComponent from '../components/SidebarComponent'
 import TrendingComponent from '../components/TrendingComponent'
+import TopRatedComponent from '../components/TopRatedComponent'
 
 export default function Home() {
   return (
@@ -30,40 +31,7 @@ export default function Home() {
                   <div className="items__custom">
                     <h4 className="items__title">Top Rated ✨</h4>
                     <div className="items__title--content">
-                      <div className="swiper topRated">
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide poster__tr">
-                            <a href="javascript(void 0)">
-                              <img className="poster__tr--image" src="/img/posters/posters-l.jpg" alt="" />
-                            </a>
-                          </div>
-                          <div className="swiper-slide poster__tr">
-                            <a href="javascript(void 0)">
-                              <img className="poster__tr--image" src="/img/posters/posters-m.jpg" alt="" />
-                            </a>
-                          </div>
-                          <div className="swiper-slide poster__tr">
-                            <a href="javascript(void 0)">
-                              <img className="poster__tr--image" src="/img/posters/posters-n.jpg" alt="" />
-                            </a>
-                          </div>
-                          <div className="swiper-slide poster__tr">
-                            <a href="javascript(void 0)">
-                              <img className="poster__tr--image" src="/img/posters/posters-o.jpg" alt="" />
-                            </a>
-                          </div>
-                          <div className="swiper-slide poster__tr">
-                            <a href="javascript(void 0)">
-                              <img className="poster__tr--image" src="/img/posters/posters-p.jpg" alt="" />
-                            </a>
-                          </div>
-                          <div className="swiper-slide poster__tr">
-                            <a href="javascript(void 0)">
-                              <img className="poster__tr--image" src="/img/posters/posters-q.jpg" alt="" />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                      <TopRatedComponent />
                     </div>
                   </div>
                   {/* <!-- latest updates --> */}

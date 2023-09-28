@@ -1,7 +1,6 @@
 import React from 'react'
 import { useRef, useEffect } from 'react';
 import { register } from 'swiper/element/bundle';
-import { Autoplay, Pagination } from 'swiper/modules';
 
 
 import 'swiper/css/pagination';
