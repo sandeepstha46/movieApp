@@ -1,5 +1,6 @@
 import React from 'react'
 import SidebarComponent from '../components/SidebarComponent'
+import TrendingComponent from '../components/TrendingComponent'
 
 export default function Home() {
   return (
@@ -22,105 +23,7 @@ export default function Home() {
                   <div className="items__custom">
                     <h4 className="items__title">Trending 🔥</h4>
                     <div className="items__title--content">
-                      <div className="swiper trendingSlider">
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide poster">
-                            <div className="poster__item">
-                              <img className="poster__background" src="/img/posters/posters-a.jpg" alt="" />
-                              <div className="poster__content">
-                                <img className="poster__image" src="/img/posters/posters-a.jpg" alt="" />
-                                <div className="poster__details">
-                                  <p className="poster__title">Aquaman</p>
-                                  <ul className="list-unstyled poster__tiny-info">
-                                    <li>2013</li>
-                                    <li>PG-13</li>
-                                    <li>1h 58min</li>
-                                  </ul>
-                                  <p className="poster__genre">
-                                    Genre:
-                                    <b>Action, Comedy</b>
-                                  </p>
-                                  <p className="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
-                                  <div className="poster__cta">
-                                    <a className="poster__cta--trailer" href="javascript(void 0)">Trailer</a>
-                                    <a className="poster__cta--movie" href="javascript(void 0)">Watched?</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="swiper-slide poster">
-                            <img className="poster__background" src="/img/posters/posters-b.jpg" alt="" />
-                            <div className="poster__content">
-                              <img className="poster__image" src="/img/posters/posters-b.jpg" alt="" />
-                              <div className="poster__details">
-                                <p className="poster__title">Aquaman</p>
-                                <ul className="list-unstyled poster__tiny-info">
-                                  <li>2013</li>
-                                  <li>PG-13</li>
-                                  <li>1h 58min</li>
-                                </ul>
-                                <p className="poster__genre">
-                                  Genre:
-                                  <b>Action, Comedy</b>
-                                </p>
-                                <p className="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
-                                <div className="poster__cta">
-                                  <a className="poster__cta--trailer" href="javascript(void 0)">Trailer</a>
-                                  <a className="poster__cta--movie" href="javascript(void 0)">Watched?</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="swiper-slide poster">
-                            <img className="poster__background" src="/img/posters/posters-c.jpg" alt="" />
-                            <div className="poster__content">
-                              <img className="poster__image" src="/img/posters/posters-c.jpg" alt="" />
-                              <div className="poster__details">
-                                <p className="poster__title">Aquaman</p>
-                                <ul className="list-unstyled poster__tiny-info">
-                                  <li>2013</li>
-                                  <li>PG-13</li>
-                                  <li>1h 58min</li>
-                                </ul>
-                                <p className="poster__genre">
-                                  Genre:
-                                  <b>Action, Comedy</b>
-                                </p>
-                                <p className="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
-                                <div className="poster__cta">
-                                  <a className="poster__cta--trailer" href="javascript(void 0)">Trailer</a>
-                                  <a className="poster__cta--movie" href="javascript(void 0)">Watched?</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="swiper-slide poster">
-                            <img className="poster__background" src="/img/posters/posters-d.jpg" alt="" />
-                            <div className="poster__content">
-                              <img className="poster__image" src="/img/posters/posters-d.jpg" alt="" />
-                              <div className="poster__details">
-                                <p className="poster__title">Aquaman</p>
-                                <ul className="list-unstyled poster__tiny-info">
-                                  <li>2013</li>
-                                  <li>PG-13</li>
-                                  <li>1h 58min</li>
-                                </ul>
-                                <p className="poster__genre">
-                                  Genre:
-                                  <b>Action, Comedy</b>
-                                </p>
-                                <p className="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
-                                <div className="poster__cta">
-                                  <a className="poster__cta--trailer" href="javascript(void 0)">Trailer</a>
-                                  <a className="poster__cta--movie" href="javascript(void 0)">Watched?</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="swiper-pagination trending-pagination"></div>
-                      </div>
+                      <TrendingComponent />
                     </div>
                   </div>
                   {/* <!-- top rated --> */}
