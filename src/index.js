@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import SidebarComponent from "./components/SidebarComponent";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+      <div className='main-wrapper-div'>
+          <div className="page-wrapper">
+
+              <SidebarComponent />
+              <section className="wrapper-items">
+                <App />
+              </section>
+          </div>
+      </div>
   </React.StrictMode>
 );
 
