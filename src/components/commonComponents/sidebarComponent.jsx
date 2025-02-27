@@ -16,7 +16,7 @@ export default function SidebarComponent() {
   ]
 
   return (
-    <div>
+    <>
         <section className="sidebar">
           <div className="sidebar__items">
             <div className="logo">
@@ -26,14 +26,12 @@ export default function SidebarComponent() {
               {/*<p className="content__title">Menu</p>*/}
               <ul className="list-unstyled sidebar__content--list">
                 {menuLists.map((menu) => (
-                    <Fragment key={menu.id}>
-                      <li className={`menu ${Location.pathname === menu.link ? "menu-active" : ""}`}>
-                        <a href={menu.link}>
-                          <i className={menu.icon}></i>
-                          <span>{menu.name}</span>
-                        </a>
-                      </li>
-                    </Fragment>
+                  <li key={menu.id} className={`menu ${Location.pathname === menu.link ? "menu-active" : ""}`}>
+                    <a href={menu.link}>
+                      <i className={menu.icon}></i>
+                      <span>{menu.name}</span>
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -48,6 +46,6 @@ export default function SidebarComponent() {
             </div>
           </div>
         </section>
-    </div>
+    </>
   )
 }

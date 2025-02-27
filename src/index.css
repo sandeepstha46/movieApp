@@ -236,9 +236,13 @@ body {
 
 .sidebar {
   width: 300px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebar__items{
   top: 0;
   position: sticky;
-  transition: all 0.5s ease-in-out;
 }
 
 .logo {
