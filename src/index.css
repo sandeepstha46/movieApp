@@ -63,6 +63,7 @@ body {
   opacity: 0;
   visibility: hidden;
   display: flex;
+  z-index: 2;
   transition: visibility 5s linear 1ms, opacity 1ms;
 }
 
