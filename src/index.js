@@ -4,19 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SidebarComponent from "./components/SidebarComponent";
+import {BrowserRouter} from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
-      <div className='main-wrapper-div'>
-          <div className="page-wrapper">
-
-              <SidebarComponent />
-              <section className="wrapper-items">
-                <App />
-              </section>
+      <BrowserRouter>
+          <div className='main-wrapper-div'>
+              <div className="page-wrapper">
+                  <SidebarComponent />
+                  <section className="wrapper-items">
+                      <App />
+                  </section>
+              </div>
           </div>
-      </div>
+      </BrowserRouter>
   </React.StrictMode>
 );
 
