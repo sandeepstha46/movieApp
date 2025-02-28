@@ -20,7 +20,7 @@ export default function UpcomingLists(){
         };
 
         fetchData();
-    }, [movies]);
+    }, []);
 
     if(loading){
         return <p>Loading...</p>;
