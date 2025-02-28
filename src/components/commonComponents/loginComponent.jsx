@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function loginComponent() {
     return (
-        <div className="login">
+        <div className={`login`}>
             <p className="authentication__type text-center">Login</p>
             <div className="authentication-welcome text-center">
                 <p className="authentication-welcome__title">Welcome</p>

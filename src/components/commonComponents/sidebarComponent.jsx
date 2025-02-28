@@ -10,7 +10,7 @@ export default function SidebarComponent() {
     {id: 1, name: "Discovery", link: "/discovery", icon: "bi bi-folder"},
     {id: 2, name: "Trending", link: "/trending", icon: "bi bi-fire"},
     {id: 3, name: "Top Rated", link: "/topRated", icon: "bi bi-hand-thumbs-up"},
-    {id: 4, name: "Movies", link: "/movie", icon: "bi bi-camera-reels"},
+    {id: 4, name: "Movies", link: "/movies", icon: "bi bi-camera-reels"},
     {id: 5, name: "Tv Shows", link: "/tvShows", icon: "bi bi-fast-forward-circle"},
     {id: 6, name: "Settings", link: "/settings", icon: "bi bi-gear"}
   ]

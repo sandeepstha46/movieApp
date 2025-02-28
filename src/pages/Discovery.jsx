@@ -30,7 +30,7 @@ export default function Discovery() {
                                     </div>
                                     <div className="filter__quality">
                                         <p className="filter__quality--title">Genre</p>
-                                        <select name="" classform-select="genre">
+                                        <select name="" className="form-select genre">
                                             <option value="all">All</option>
                                             <option value="action">Action</option>
                                             <option value="adventure">Adventure</option>
@@ -48,7 +48,7 @@ export default function Discovery() {
                                     </div>
                                     <div className="filter__quality">
                                         <p className="filter__quality--title">Year</p>
-                                        <select name="" clasform-select s="year">
+                                        <select name="" className="form-select year">
                                             <option value="all">All</option>
                                             <option value="9">9+</option>
                                             <option value="8">8+</option>

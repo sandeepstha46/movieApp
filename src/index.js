@@ -7,6 +7,8 @@ import SidebarComponent from "./components/commonComponents/sidebarComponent";
 import {BrowserRouter} from "react-router-dom";
 import AuthComponent from "./components/authComponent";
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <React.StrictMode>
       <BrowserRouter>
