@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function registerComponent() {
+export default function RegisterComponent() {
     return (
         <div className="register">
             <p className="authentication__type text-center">Register</p>

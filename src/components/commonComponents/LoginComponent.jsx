@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function loginComponent() {
+export default function LoginComponent() {
     return (
         <div className={`login`}>
             <p className="authentication__type text-center">Login</p>
@@ -19,14 +19,14 @@ export default function loginComponent() {
                                pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required/>
                     </div>
                     <div className="authentication__input--type authentication__password">
-                        {/*<!-- <span class="error-message">Password must be atleast 8 characters</span> -->
+                        {/*<!-- <span class="error-message">Password must be at least 8 characters</span> -->
                         */}
                         <input type="password" name="password" className="auth__input password__type"
                                placeholder="●●●●●●●●" required/>
                         <i className="bi bi-eye-slash toggle__visibilty"></i>
                     </div>
                     <div className="forgot__password text-end pt-1">
-                        <a href="javascriptvoid(0)">Forgot Password?</a>
+                        <a href="#">Forgot Password?</a>
                     </div>
                     <div className="submit-button__login">
                         <button className="btn primary-button login__button" type="submit">Login</button>

@@ -7,6 +7,8 @@ export default function AuthComponent() {
 
     const status = useOutletContext();
 
+    console.log(status + "auth");
+
     return (
             <div className={`authentication`}>
                 <div className="authentication__content">

@@ -1,5 +1,6 @@
-import React, {Fragment} from 'react'
-import {useLocation} from "react-router-dom";
+import React, {Fragment, useState} from 'react'
+import {Outlet, useLocation} from "react-router-dom";
+import AuthComponent from "../AuthComponent";
 
 export default function SidebarComponent() {
 
