@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SidebarComponent from "./components/commonComponents/SidebarComponent";
 import {BrowserRouter} from "react-router-dom";
-import AuthComponent from "./components/AuthComponent";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
@@ -13,7 +12,6 @@ root.render(
   <React.StrictMode>
       <BrowserRouter>
           <div className='main-wrapper-div'>
-              <AuthComponent />
               <div className="page-wrapper">
                   <SidebarComponent />
                   <section className="wrapper-items">

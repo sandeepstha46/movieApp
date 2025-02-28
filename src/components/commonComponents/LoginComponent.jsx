@@ -1,8 +1,16 @@
 import React from 'react'
+import {useNavigate} from "react-router-dom";
 
 export default function LoginComponent() {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/register");
+    }
+
     return (
-        <div className={`login`}>
+        <div className="login active">
             <p className="authentication__type text-center">Login</p>
             <div className="authentication-welcome text-center">
                 <p className="authentication-welcome__title">Welcome</p>
@@ -34,7 +42,7 @@ export default function LoginComponent() {
                 </form>
                 <p className="no__account text-center pt-3">
                     Don't have an account?
-                    <span className="sign-up text-white ps-1">Sign Up</span>
+                    <span onClick={handleClick} className="sign-up text-white ps-1">Sign Up</span>
                 </p>
             </div>
         </div>

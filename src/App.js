@@ -7,8 +7,17 @@ import TvShows from './pages/TvShows';
 import Discovery from "./pages/Discovery";
 import Trending from "./pages/Trending";
 import Settings from "./pages/Settings";
+import AuthComponent from "./components/AuthComponent";
+import React from "react";
 
 function App() {
+    const authType = [{
+        id: '0', url: '/login'
+    }, {
+        id: '1', url: '/register'
+    }
+    ];
+
   return (
       <Routes>
           <Route exact path="/" element={<Home />} />
@@ -18,6 +27,11 @@ function App() {
           <Route path="/Discovery" element={<Discovery />} />
           <Route path="/Trending" element={<Trending />} />
           <Route path="/Settings" element={<Settings />} />
+
+          {authType.map((type) => (
+              <Route path={type.url} element={<AuthComponent/>} />
+          ))}
+
       </Routes>
   );
 }

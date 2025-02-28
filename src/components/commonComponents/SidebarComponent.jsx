@@ -1,6 +1,5 @@
-import React, {Fragment, useState} from 'react'
-import {Outlet, useLocation} from "react-router-dom";
-import AuthComponent from "../AuthComponent";
+import React from 'react'
+import {useLocation, useNavigate} from "react-router-dom";
 
 export default function SidebarComponent() {
 
@@ -15,6 +14,12 @@ export default function SidebarComponent() {
     {id: 5, name: "Tv Shows", link: "/tvShows", icon: "bi bi-fast-forward-circle"},
     {id: 6, name: "Settings", link: "/settings", icon: "bi bi-gear"}
   ]
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/login");
+  }
 
   return (
     <>
@@ -38,7 +43,7 @@ export default function SidebarComponent() {
             </div>
           </div>
           <div className="sidebar__footer">
-            <div className="sidebar__footer--content">
+            <div onClick={handleClick} className="sidebar__footer--content">
               <img src="/img/profile.png" alt="" />
               <div className="user__detail">
                 <p className="user__detail--name">Login</p>

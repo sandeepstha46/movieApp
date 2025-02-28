@@ -1,8 +1,16 @@
 import React from 'react'
+import {useNavigate} from "react-router-dom";
 
 export default function RegisterComponent() {
+
+    const navigate = useNavigate();
+
+    const handleClick = (e) => {
+        navigate("/login");
+    }
+
     return (
-        <div className="register">
+        <div className="register active">
             <p className="authentication__type text-center">Register</p>
             <div className="authentication__input">
                 <form action="" method="post">
@@ -35,7 +43,7 @@ export default function RegisterComponent() {
                 </form>
                 <p className="no__account text-end">
                     Already have an account?
-                    <span className="log-in">Log in</span>
+                    <span onClick={handleClick} className="ps-1 log-in text-white text-bold">Log in</span>
                 </p>
             </div>
         </div>
