@@ -1,7 +1,7 @@
 import React from 'react'
-import TrendingComponent from "../components/trendingComponent";
-import TopRatedComponent from "../components/topRatedComponent";
-import UpcomingLists from "../components/commonComponents/upcomingLists";
+import TrendingComponent from "../components/TrendingComponent";
+import TopRatedComponent from "../components/TopRatedComponent";
+import UpcomingLists from "../components/commonComponents/UpcomingLists";
 
 export default function Discovery() {
     return (

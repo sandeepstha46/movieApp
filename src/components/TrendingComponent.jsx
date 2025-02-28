@@ -49,8 +49,8 @@ export default function TrendingComponent() {
                             </p>
                             <p className="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
                             <div className="poster__cta">
-                                <a className="poster__cta--trailer" href="javascript(void 0)">Trailer</a>
-                                <a className="poster__cta--movie" href="javascript(void 0)">Watched?</a>
+                                <a className="poster__cta--trailer" href="#">Trailer</a>
+                                <a className="poster__cta--movie" href="#">Watched?</a>
                             </div>
                         </div>
                     </div>
@@ -74,8 +74,8 @@ export default function TrendingComponent() {
                             </p>
                             <p className="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
                             <div className="poster__cta">
-                                <a className="poster__cta--trailer" href="javascript(void 0)">Trailer</a>
-                                <a className="poster__cta--movie" href="javascript(void 0)">Watched?</a>
+                                <a className="poster__cta--trailer" href="#">Trailer</a>
+                                <a className="poster__cta--movie" href="#">Watched?</a>
                             </div>
                         </div>
                     </div>
@@ -99,8 +99,8 @@ export default function TrendingComponent() {
                             </p>
                             <p className="poster__info">Born upon the shores of the surface world, Arthur Curry (Jason Momoa) discovers that he is only half human, with the other half...</p>
                             <div className="poster__cta">
-                                <a className="poster__cta--trailer" href="javascript(void 0)">Trailer</a>
-                                <a className="poster__cta--movie" href="javascript(void 0)">Watched?</a>
+                                <a className="poster__cta--trailer" href="#">Trailer</a>
+                                <a className="poster__cta--movie" href="#">Watched?</a>
                             </div>
                         </div>
                     </div>

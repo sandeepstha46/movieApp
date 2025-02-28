@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import SidebarComponent from "./components/commonComponents/sidebarComponent";
+import SidebarComponent from "./components/commonComponents/SidebarComponent";
 import {BrowserRouter} from "react-router-dom";
-import AuthComponent from "./components/authComponent";
+import AuthComponent from "./components/AuthComponent";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 

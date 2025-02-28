@@ -1,7 +1,7 @@
 import React from 'react'
-import TrendingComponent from '../components/trendingComponent'
-import TopRatedComponent from '../components/topRatedComponent'
-import UpcomingLists from "../components/commonComponents/upcomingLists";
+import TrendingComponent from '../components/TrendingComponent'
+import TopRatedComponent from '../components/TopRatedComponent'
+import UpcomingLists from "../components/commonComponents/UpcomingLists";
 
 export default function Home() {
   return (
@@ -29,52 +29,52 @@ export default function Home() {
                       <div className="items__title--content">
                         <div className="all">
                           <div className="all__item">
-                            <a href="javascript(void 0)">
+                            <a href="#">
                               <img src="/img/posters/posters-k.jpg" alt="" />
                             </a>
                           </div>
                           <div className="all__item">
-                            <a href="javascript(void 0)">
+                            <a href="#">
                               <img src="/img/posters/posters-l.jpg" alt="" />
                             </a>
                           </div>
                           <div className="all__item">
-                            <a href="javascript(void 0)">
+                            <a href="#">
                               <img src="/img/posters/posters-m.jpg" alt="" />
                             </a>
                           </div>
                           <div className="all__item">
-                            <a href="javascript(void 0)">
+                            <a href="#">
                               <img src="/img/posters/posters-n.jpg" alt="" />
                             </a>
                           </div>
                           <div className="all__item">
-                            <a href="javascript(void 0)">
+                            <a href="#">
                               <img src="/img/posters/posters-o.jpg" alt="" />
                             </a>
                           </div>
                           <div className="all__item">
-                            <a href="javascript(void 0)">
+                            <a href="#">
                               <img src="/img/posters/posters-p.jpg" alt="" />
                             </a>
                           </div>
                           <div className="all__item">
-                            <a href="javascript(void 0)">
+                            <a href="#">
                               <img src="/img/posters/posters-q.jpg" alt="" />
                             </a>
                           </div>
                           <div className="all__item">
-                            <a href="javascript(void 0)">
+                            <a href="#">
                               <img src="/img/posters/posters-r.jpg" alt="" />
                             </a>
                           </div>
                           <div className="all__item">
-                            <a href="javascript(void 0)">
+                            <a href="#">
                               <img src="/img/posters/posters-s.jpg" alt="" />
                             </a>
                           </div>
                           <div className="all__item">
-                            <a href="javascript(void 0)">
+                            <a href="#">
                               <img src="/img/posters/posters-t.jpg" alt="" />
                             </a>
                           </div>

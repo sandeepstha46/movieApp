@@ -30,37 +30,37 @@ export default function TopRatedComponent() {
       class="topRated"
     >
       <swiper-slide class='poster_tr'>
-        <a href="javascript(void 0)">
+        <a href="#">
           <img className="poster__tr--image" src="/img/posters/posters-g.jpg" alt="" />
         </a>
       </swiper-slide>
       <swiper-slide class='poster__tr'>
-        <a href="javascript(void 0)">
+        <a href="#">
           <img className="poster__tr--image" src="/img/posters/posters-h.jpg" alt="" />
         </a>
       </swiper-slide>
       <swiper-slide class='poster__tr'>
-        <a href="javascript(void 0)">
+        <a href="#">
           <img className="poster__tr--image" src="/img/posters/posters-i.jpg" alt="" />
         </a>
       </swiper-slide>
       <swiper-slide class='poster__tr'>
-        <a href="javascript(void 0)">
+        <a href="#">
           <img className="poster__tr--image" src="/img/posters/posters-j.jpg" alt="" />
         </a>
       </swiper-slide>
       <swiper-slide class='poster__tr'>
-        <a href="javascript(void 0)">
+        <a href="#">
           <img className="poster__tr--image" src="/img/posters/posters-k.jpg" alt="" />
         </a>
       </swiper-slide>
       <swiper-slide class='poster__tr'>
-        <a href="javascript(void 0)">
+        <a href="#">
           <img className="poster__tr--image" src="/img/posters/posters-l.jpg" alt="" />
         </a>
       </swiper-slide>
       <swiper-slide class='poster__tr'>
-        <a href="javascript(void 0)">
+        <a href="#">
           <img className="poster__tr--image" src="/img/posters/posters-m.jpg" alt="" />
         </a>
       </swiper-slide>

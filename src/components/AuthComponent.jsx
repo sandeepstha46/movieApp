@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet, useOutletContext } from "react-router-dom";
-import LoginComponent from './commonComponents/loginComponent'
-import RegisterComponent from './commonComponents/registerComponent'
+import LoginComponent from './commonComponents/LoginComponent'
+import RegisterComponent from './commonComponents/RegisterComponent'
 
 export default function AuthComponent() {
 
