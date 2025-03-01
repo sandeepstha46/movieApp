@@ -743,6 +743,7 @@ body {
   padding-top: 20px;
   position: sticky;
   top: 0px;
+  margin-bottom: 40px;
 }
 
 .upcoming .upcoming__item:not(:last-child){
@@ -763,12 +764,16 @@ body {
 
 .upcoming .upcoming__item--contents a{
   color: #fff;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .upcoming .upcoming__item--details{
   line-height: 1.6;
   font-size: 14px;
+  max-height: 56px;
+  overflow: hidden;
 }
 
 /* search */
