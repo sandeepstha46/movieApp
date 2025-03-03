@@ -38,10 +38,10 @@ export default function Home() {
                   <div className="col-lg-8 items__list">
                     {/* <!-- latest updates --> */}
                     <div className="items__custom">
-                      <h4 className="items__title">Latest Updates</h4>
+                      <h4 className="items__title">Now Playing</h4>
                       <div className="items__title--content">
                         <div className="all">
-                          {movies.length > 0 && movies.map((data) => (
+                          {movies.map((data) => (
                               <div className="all__item">
                                 <a href="#">
                                   <img src={`https://image.tmdb.org/t/p/w500/${data.poster_path}`} alt="" />

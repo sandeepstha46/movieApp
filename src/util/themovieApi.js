@@ -7,7 +7,7 @@ export const getMovies = async(endpoints) => {
     try{
 
         const response = await axios.get(`${baseUrl}${endpoints}?api_key=${API_KEY}`);
-        return response.data;
+        return response.data
     } catch (error) {
         throw error;
     }
@@ -22,5 +22,5 @@ export const topRatedMovies = async () => {
 }
 
 export const moviesLists = async () => {
-    return getMovies('genre/movie/list');
+    return getMovies('movie/now_playing');
 }

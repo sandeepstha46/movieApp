@@ -700,13 +700,8 @@ body {
 
 .all{
   display: grid;
-  row-gap: 35px;
-  grid-template-columns: repeat(5,1fr);
-}
-
-.all__item{
-  max-width: 165px;
-  max-height: 255px;
+  gap: 40px;
+  grid-template-columns: repeat(4,1fr);
 }
 
 .all__item a img{
@@ -715,6 +710,11 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 16px;
+}
+
+.all__item a img:hover{
+  outline: 4px solid #fff;
+  transition: all 0.15s ease-in-out;
 }
 
 .all-pagination .all-pagination__list{
