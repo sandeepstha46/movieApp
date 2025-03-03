@@ -4,6 +4,47 @@ import TopRatedComponent from "../components/TopRatedComponent";
 import UpcomingLists from "../components/commonComponents/UpcomingLists";
 
 export default function Discovery() {
+
+    const quality =[
+        {id: 0, name: "All"},
+        {id: 1, name: "720p"},
+        {id: 2, name: "1080p"},
+    ]
+
+    const genre =[
+        {id: 0, name: "All"},
+        {id: 1, name: "Action"},
+        {id: 2, name: "Adventure"},
+    ]
+
+    const rating = [
+        {id: 0, name: "All"},
+        {id: 1, name: "1"},
+        {id: 2, name: "2"},
+        {id: 3, name: "3"},
+        {id: 4, name: "4"},
+        {id: 5, name: "5"},
+    ]
+
+    const year = [
+        {id: 0, name: "All"},
+        {id: 1, name: "2021"},
+        {id: 2, name: "2020"},
+    ]
+
+    const language = [
+        {id: 0, name: "All"},
+        {id: 1, name: "English"},
+        {id: 2, name: "Korean"},
+        {id: 3, name: "India"}
+    ]
+
+    const orderBy = [
+        {id: 0, name: "Latest"},
+        {id: 1, name: "Most Rated"},
+        {id: 2, name: "Most Watch"},
+    ]
+
     return (
         <div className="items">
             <div className="container-fluid">
@@ -18,60 +59,60 @@ export default function Discovery() {
                                     </button>
                                 </form>
                                 <div className="search__filter">
-                                    <div className="filter__quality">
-                                        <p className="filter__quality--title">Quality</p>
-                                        <select name="" className="form-select qualtiy">
-                                            <option value="all">All</option>
-                                            <option value="720p">720p</option>
-                                            <option value="1080p">1080p</option>
-                                            <option value="4K">4K</option>
-                                            <option value="8K">8K</option>
-                                        </select>
+                                    <div className="filter__item">
+                                        <p className="filter__item--title">Quality</p>
+                                        <input type="text" name="quality" placeholder="Quality"/>
+                                        <ul className="select-list quality">
+                                            {quality.map((data) => (
+                                                    <li key={data.id}>{data.name}</li>
+                                            ))}
+                                        </ul>
+
                                     </div>
-                                    <div className="filter__quality">
-                                        <p className="filter__quality--title">Genre</p>
-                                        <select name="" className="form-select genre">
-                                            <option value="all">All</option>
-                                            <option value="action">Action</option>
-                                            <option value="adventure">Adventure</option>
-                                            <option value="romance">Romance</option>
-                                        </select>
+                                    <div className="filter__item">
+                                        <p className="filter__item--title">Genre</p>
+                                        <input type="text" name="genre" placeholder="Genre"/>
+                                        <ul className="select-list genre">
+                                            {genre.map((data) => (
+                                                <li key={data.id}>{data.name}</li>
+                                            ))}
+                                        </ul>
                                     </div>
-                                    <div className="filter__quality">
-                                        <p className="filter__quality--title">Rating</p>
-                                        <select name="" className="form-select rating">
-                                            <option value="all">All</option>
-                                            <option value="9">9+</option>
-                                            <option value="8">8+</option>
-                                            <option value="7">7+</option>
-                                        </select>
+                                    <div className="filter__item">
+                                        <p className="filter__item--title">Rating</p>
+                                        <input type="text" name="rating" placeholder="Rating"/>
+                                        <ul className="select-list rating">
+                                            {rating.map((data) => (
+                                                <li key={data.id}>{data.name}</li>
+                                            ))}
+                                        </ul>
                                     </div>
-                                    <div className="filter__quality">
-                                        <p className="filter__quality--title">Year</p>
-                                        <select name="" className="form-select year">
-                                            <option value="all">All</option>
-                                            <option value="9">9+</option>
-                                            <option value="8">8+</option>
-                                            <option value="7">7+</option>
-                                        </select>
+                                    <div className="filter__item">
+                                        <p className="filter__item--title">Year</p>
+                                        <input type="text" name="year" placeholder="Year"/>
+                                        <ul className="select-list year">
+                                            {year.map((data) => (
+                                                <li key={data.id}>{data.name}</li>
+                                            ))}
+                                        </ul>
                                     </div>
-                                    <div className="filter__quality">
-                                        <p className="filter__quality--title">Language</p>
-                                        <select name="" className="lform-select anguage">
-                                            <option value="all">All</option>
-                                            <option value="english">English</option>
-                                            <option value="korean">Korean</option>
-                                            <option value="japanese">Japanese</option>
-                                        </select>
+                                    <div className="filter__item">
+                                        <p className="filter__item--title">Language</p>
+                                        <input type="text" name="language" placeholder="Language"/>
+                                        <ul className="select-list language">
+                                            {language.map((data) => (
+                                                <li key={data.id}>{data.name}</li>
+                                            ))}
+                                        </ul>
                                     </div>
-                                    <div className="filter__quality">
-                                        <p className="filter__quality--title">Order By</p>
-                                        <select name="" className="form-select oder-by">
-                                            <option value="latest">Latest</option>
-                                            <option value="english">Most Rated</option>
-                                            <option value="korean">Most Watch</option>
-                                            <option value="japanese">Most Downloaded</option>
-                                        </select>
+                                    <div className="filter__item">
+                                        <p className="filter__item--title">Order By</p>
+                                        <input type="text" name="orderby" placeholder="Order by"/>
+                                        <ul className="select-list order-by">
+                                            {orderBy.map((data) => (
+                                                <li key={data.id}>{data.name}</li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

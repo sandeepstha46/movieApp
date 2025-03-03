@@ -24,3 +24,7 @@ export const topRatedMovies = async () => {
 export const moviesLists = async () => {
     return getMovies('movie/now_playing');
 }
+
+export const searchMovies = async (query) => {
+    return getMovies(`discover/movie`);
+}

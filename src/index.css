@@ -567,7 +567,7 @@ body {
 }
 
 .items__custom:not(:last-child){
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .items .items__title{
@@ -789,7 +789,7 @@ input:focus-visible, input:visited{
 .items__search input{
   background-color: rgb(69 69 69);
   border: none;
-  max-width: 100%;
+  width: 100%;
   padding: 14px;
   border-radius: 8px;
   color: var(--paragraph-color);
@@ -814,8 +814,28 @@ input:focus-visible, input:visited{
   padding-top: 30px;
 }
 
-.filter__quality--title{
+.filter__item{
+  position: relative;
+}
+
+.filter__item--title{
   padding-bottom: 10px;
+}
+
+.select-list{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin-top: 8px;
+  padding: 16px;
+  background-color: #282828;
+  font-size: 14px;
+  border-radius: 8px;
+  list-style-type: none;
+}
+
+.select-list > li{
+  padding: 8px;
 }
 
 .form-select:focus{
@@ -823,23 +843,6 @@ input:focus-visible, input:visited{
   box-shadow: none;
 }
 
-.search__filter select{
-  width: 120px;
-  padding: 8px 10px;
-  background-color: #282828;
-  border: none;
-  color: inherit;
-  font-size: 14px;
-  border-radius: 4px;
-  font-weight: normal;
-  font-family: inherit;
-  overflow: hidden;
-  height: 40px;
-}
-
-.search__filter select > option{
-  padding: 14px;
-}
 
 /* Settings */
 .profile{
