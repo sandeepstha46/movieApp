@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useRef, useEffect } from 'react';
 import { register } from 'swiper/element/bundle';
 
 
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import {topRatedMovies} from "../util/themovieApi";
 
 
 register();
@@ -13,58 +14,59 @@ export default function TopRatedComponent() {
   const swiperElRef = useRef(null);
 
   useEffect(() => {
-    // listen for Swiper events using addEventListener
-    swiperElRef.current.addEventListener('progress', (e) => {
-      const [swiper, progress] = e.detail;
-    });
+   if(swiperElRef.current){
+     // listen for Swiper events using addEventListener
+     swiperElRef.current.addEventListener('progress', (e) => {
+       const [swiper, progress] = e.detail;
+     });
 
-    swiperElRef.current.addEventListener('slidechange', (e) => {
-    });
+     swiperElRef.current.addEventListener('slidechange', (e) => {
+     });
+   }
   }, []);
-  return (
-    <swiper-container
-      ref={swiperElRef}
-      slides-per-view="5"
-      space-between='30'
-      autoplay-delay='5000'
-      class="topRated"
-    >
-      <swiper-slide class='poster_tr'>
-        <a href="#">
-          <img className="poster__tr--image" src="/img/posters/posters-g.jpg" alt="" />
-        </a>
-      </swiper-slide>
-      <swiper-slide class='poster__tr'>
-        <a href="#">
-          <img className="poster__tr--image" src="/img/posters/posters-h.jpg" alt="" />
-        </a>
-      </swiper-slide>
-      <swiper-slide class='poster__tr'>
-        <a href="#">
-          <img className="poster__tr--image" src="/img/posters/posters-i.jpg" alt="" />
-        </a>
-      </swiper-slide>
-      <swiper-slide class='poster__tr'>
-        <a href="#">
-          <img className="poster__tr--image" src="/img/posters/posters-j.jpg" alt="" />
-        </a>
-      </swiper-slide>
-      <swiper-slide class='poster__tr'>
-        <a href="#">
-          <img className="poster__tr--image" src="/img/posters/posters-k.jpg" alt="" />
-        </a>
-      </swiper-slide>
-      <swiper-slide class='poster__tr'>
-        <a href="#">
-          <img className="poster__tr--image" src="/img/posters/posters-l.jpg" alt="" />
-        </a>
-      </swiper-slide>
-      <swiper-slide class='poster__tr'>
-        <a href="#">
-          <img className="poster__tr--image" src="/img/posters/posters-m.jpg" alt="" />
-        </a>
-      </swiper-slide>
 
-    </swiper-container >
+
+  const [topRated, setTopRated] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try{
+        const data = await topRatedMovies();
+        setTopRated(data.results);
+        setLoading(false);
+      } catch (error){
+        setError(error);
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, []);
+
+  if(loading){
+    return <p>Loading...</p>;
+  }
+
+  if (error){
+    return <p>Error: {error.message}</p>;
+  }
+
+  return (
+      <swiper-container
+          ref={swiperElRef}
+          slides-per-view="5"
+          space-between='24'
+          autoplay-delay='5000'
+          class="topRated"
+      >
+        {topRated.map((data) => (
+            <swiper-slide className='poster_tr'>
+              <a href="#">
+                <img className="poster__tr--image" src={`https://image.tmdb.org/t/p/w500/${data.poster_path}`} alt=""/>
+              </a>
+            </swiper-slide>
+        ))}
+      </swiper-container>
   )
 }
