@@ -29,7 +29,7 @@ function App() {
           <Route path="/Settings" element={<Settings />} />
 
           {authType.map((type) => (
-              <Route path={type.url} element={<AuthComponent/>} />
+              <Route path={type.url} element={<AuthComponent/>} key={type.url} />
           ))}
 
       </Routes>

@@ -29,7 +29,6 @@ export default function AuthComponent() {
                             <Navigate to="/" replace />
                         )
                     }
-
                 </div>
             </div>
     )

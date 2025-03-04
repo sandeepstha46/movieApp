@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SidebarComponent from "./components/commonComponents/SidebarComponent";
 import {BrowserRouter} from "react-router-dom";
+import UpcomingLists from "./components/commonComponents/UpcomingLists";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
@@ -15,7 +16,16 @@ root.render(
               <div className="page-wrapper">
                   <SidebarComponent />
                   <section className="wrapper-items">
-                      <App />
+                      <div className="items">
+                          <div className="container-fluid">
+                              <div className="row">
+                                  <div className="col-lg-8 items__list">
+                                    <App />
+                                  </div>
+                                  <UpcomingLists />
+                              </div>
+                          </div>
+                      </div>
                   </section>
               </div>
           </div>

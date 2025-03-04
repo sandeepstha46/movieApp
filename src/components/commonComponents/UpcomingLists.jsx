@@ -30,6 +30,7 @@ export default function UpcomingLists(){
         return <p>Error: {error.message}</p>;
     }
 
+
     return (
     <div className="col-lg-4 upcoming">
         <h4 className="items__title">Upcoming 🍿</h4>

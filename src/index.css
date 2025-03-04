@@ -571,7 +571,7 @@ body {
 }
 
 .items .items__title{
-  color: #fff;
+  color: rgba(255,255,255,0.6);
 }
 
 .items .items__title--content{
@@ -770,7 +770,7 @@ body {
 .upcoming .upcoming__item--details{
   line-height: 1.6;
   font-size: 14px;
-  max-height: 56px;
+  max-height: 50px;
   overflow: hidden;
 }
 
