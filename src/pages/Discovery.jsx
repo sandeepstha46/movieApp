@@ -47,69 +47,70 @@ export default function Discovery() {
             <>
                 <div className="items__custom">
                     <div className="items__search">
-                        <form action="" className="items__form">
-                            <input type="text" name="search"/>
-                            <button type="submit" className="search__button">
-                                <i className="bi bi-search"></i> Search
-                            </button>
+                        <form action="" className="form-wrapper">
+                            <div className="form-inputs">
+                                <input type="text" name="search"/>
+                                <button type="submit" className="search__button">
+                                    <i className="bi bi-search"></i> Search
+                                </button>
+                            </div>
+                            <div className="search__filter">
+                                <div className="filter__item">
+                                    <p className="filter__item--title">Quality</p>
+                                    <input type="text" name="quality" placeholder="Quality"/>
+                                    <ul className="select-list quality">
+                                        {quality.map((data) => (
+                                            <li key={data.id}>{data.name}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="filter__item">
+                                    <p className="filter__item--title">Genre</p>
+                                    <input type="text" name="genre" placeholder="Genre"/>
+                                    <ul className="select-list genre">
+                                        {genre.map((data) => (
+                                            <li key={data.id}>{data.name}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="filter__item">
+                                    <p className="filter__item--title">Rating</p>
+                                    <input type="text" name="rating" placeholder="Rating"/>
+                                    <ul className="select-list rating">
+                                        {rating.map((data) => (
+                                            <li key={data.id}>{data.name}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="filter__item">
+                                    <p className="filter__item--title">Year</p>
+                                    <input type="text" name="year" placeholder="Year"/>
+                                    <ul className="select-list year">
+                                        {year.map((data) => (
+                                            <li key={data.id}>{data.name}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="filter__item">
+                                    <p className="filter__item--title">Language</p>
+                                    <input type="text" name="language" placeholder="Language"/>
+                                    <ul className="select-list language">
+                                        {language.map((data) => (
+                                            <li key={data.id}>{data.name}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="filter__item">
+                                    <p className="filter__item--title">Order By</p>
+                                    <input type="text" name="orderby" placeholder="Order by"/>
+                                    <ul className="select-list order-by">
+                                        {orderBy.map((data) => (
+                                            <li key={data.id}>{data.name}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
                         </form>
-                        <div className="search__filter">
-                            <div className="filter__item">
-                                <p className="filter__item--title">Quality</p>
-                                <input type="text" name="quality" placeholder="Quality"/>
-                                <ul className="select-list quality">
-                                    {quality.map((data) => (
-                                        <li key={data.id}>{data.name}</li>
-                                    ))}
-                                </ul>
-
-                            </div>
-                            <div className="filter__item">
-                                <p className="filter__item--title">Genre</p>
-                                <input type="text" name="genre" placeholder="Genre"/>
-                                <ul className="select-list genre">
-                                    {genre.map((data) => (
-                                        <li key={data.id}>{data.name}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="filter__item">
-                                <p className="filter__item--title">Rating</p>
-                                <input type="text" name="rating" placeholder="Rating"/>
-                                <ul className="select-list rating">
-                                    {rating.map((data) => (
-                                        <li key={data.id}>{data.name}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="filter__item">
-                                <p className="filter__item--title">Year</p>
-                                <input type="text" name="year" placeholder="Year"/>
-                                <ul className="select-list year">
-                                    {year.map((data) => (
-                                        <li key={data.id}>{data.name}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="filter__item">
-                                <p className="filter__item--title">Language</p>
-                                <input type="text" name="language" placeholder="Language"/>
-                                <ul className="select-list language">
-                                    {language.map((data) => (
-                                        <li key={data.id}>{data.name}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="filter__item">
-                                <p className="filter__item--title">Order By</p>
-                                <input type="text" name="orderby" placeholder="Order by"/>
-                                <ul className="select-list order-by">
-                                    {orderBy.map((data) => (
-                                        <li key={data.id}>{data.name}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <MovieGrid />
